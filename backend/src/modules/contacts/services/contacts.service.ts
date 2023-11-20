@@ -20,7 +20,9 @@ export class ContactsService {
   }
 
   findByLastName(lastName): Promise<Contact[]> {
-    return this.contactModel.find({ lastName: { $regex: lastName } }).exec();
+    return this.contactModel
+      .find({ lastName: { $regex: lastName, $options: 'i' } })
+      .exec();
   }
 
   remove(id: string): Promise<Contact> {
