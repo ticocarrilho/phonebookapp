@@ -1,5 +1,7 @@
 # Phonebook App
 
+[Live Deployment](https://phonebook.carrilho.dev.br)
+
 ### Stack Used
 * [Node.JS](https://nodejs.org/)
 * [Nest.JS](https://nestjs.com/)
@@ -12,9 +14,9 @@
 #### Without Docker
 To run the project you need to have a MongoDB instance running on your system.
 
-Fill in the *.env.sample* files in the *backend* folder directory with the database information.
+Fill in the *.env.sample* files in the *backend* folder directory with the database information and rename it to *.env*.
 
-Fill in the *.env.sample* files in the *frontend* folder directory with the backend URL.
+Fill in the *.env.sample* files in the *frontend* folder directory with the backend URL and rename it to *.env*.
 
 ##### Backend
 Install the NPM dependencies and run the start:dev NPM script.
